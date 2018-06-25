@@ -16,7 +16,7 @@ const plugin: JupyterLabPlugin<void> = {
   requires: [IThemeManager],
   activate: function(app: JupyterLab, manager: IThemeManager) {
     manager.register({
-      name: 'jupyterlab_epotheme',
+      name: 'LSST Minimal',
       load: function() {
         return manager.loadCSS('jupyterlab_epotheme/index.css');
       },
